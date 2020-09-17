@@ -1,6 +1,3 @@
-/**
- * 
- */
 async function main() {
   try {
     const userId = getUserID();
@@ -13,8 +10,8 @@ async function main() {
 }
 
 /**
- * 
- * @param {*} userId 
+ *
+ * @param {string} userId
  */
 function fetchUserInfo(userId) {
   return fetch(
@@ -29,16 +26,13 @@ function fetchUserInfo(userId) {
     }
   });
 }
-/**
- * 
- */
 function getUserID() {
   return document.getElementById("userId").value;
 }
 
 /**
- * 
- * @param {*} userInfo 
+ *
+ * @param {string} userInfo
  */
 function createView(userInfo) {
   return escapeHTML`
@@ -59,8 +53,8 @@ function displayView(view) {
 }
 
 /**
- * 
- * @param {*} str 
+ *
+ * @param {string} str
  */
 function escapeSpecialChars(str) {
   return str
@@ -72,11 +66,12 @@ function escapeSpecialChars(str) {
 }
 
 /**
- * 
- * @param {*} strings 
- * @param  {...any} values 
+ *
+ * @param {string} strings
+ * @param  {object} values
  */
 function escapeHTML(strings, ...values) {
+  console.log(typeof values);
   return strings.reduce((result, str, i) => {
     const value = values[i - 1];
     if (typeof value === "string") {
