@@ -1,0 +1,22 @@
+{
+  "name": "js-primer",
+  "version": "1.0.0",
+  "private" :"true",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mizobuchiy/js-primer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mizobuchiy/js-primer/issues"
+  },
+  "homepage": "https://github.com/mizobuchiy/js-primer#readme",
+  "devDependencies": {
+    "eslint": "^7.9.0"
+  }
+}
